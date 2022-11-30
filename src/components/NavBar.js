@@ -1,12 +1,13 @@
 import React from "react";
 
-function NavBar() {
-  return (
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-    </nav>
-  );
+function Links({github, linkedin}) {
+    return (
+        <div>
+            <h3>Links</h3>
+            <a href={github}>{github}</a>
+            <a href={linkedin}>{linkedin}</a>
+        </div>
+    )
 }
 
-export default NavBar;
+export default Links;
